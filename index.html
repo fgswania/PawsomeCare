@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Pictures/Pawsome logo.png">
+    <title>PawsomeCare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <img class="logo" src="Pictures/Pawsome logo.png" alt="Logo">
+            </div>
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab"><a href="index.html" >Home</a></li>
+                        <li class="nav-tab"><a href="aboutus.html" >About</a></li>
+                        <li class="nav-tab"><a href="petcare.html" >PetCare</a></li>
+                        <li class="nav-tab"><a href="services.html" >Services</a></li>
+                        <li class="nav-tab"><a href="shop.html">Shop</a></li>
+                        <li class="nav-tab"><a href="contact.html" >Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="hero"> 
+        <div class="content">
+        <h3>PawsomeCare</h3>
+        <p id="subhead">At PawsomeCare, we believe that pets are more than just animals; they are cherished members of our families.
+        </p><br>
+        <button class="button-33" role="button"><a href="#welcome" style="text-decoration: none; color: #407234;">Get Started</a></button>
+      </div>
+  
+        </div>
+           
+           
+    </header>
+
+        <section>
+            <div class="container" id="welcome">
+                <div class="text"> <h2>Welcome to Pawsome<span style="color: #407234;">Care!</span></h2>Our team of pet care professionals is
+                     dedicated to sharing their extensive knowledge and expertise.
+                      Whether you're a first-time pet owner or an experienced pet 
+                      parent, you'll find valuable tips and insights to help you care 
+                      for your beloved companions.</div>
+                      <img src="Pictures/catdog.png" alt="" id="img">
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <img src="Pictures/food.png" alt="" id="img2">
+                <div class="text"> <h2>Premium <span style="color: #407234;">Pet Food </span>Manufacturer</h2>
+                    Our pet food is crafted with a blend of high-quality proteins, wholesome grains, 
+                    and essential vitamins and minerals,
+                     ensuring that your pets receive a complete and balanced diet. <br><br>
+                     <button class="button-shop" role="button"><a href="shop.html"
+                       style="text-decoration: none; color: #407234;">Shop</a></button></div>
+                    
+            </div>
+            
+        </section>
+
+
+        <section>
+            <h1>CHOOSE A <span style="color: #407234;">PLAN</span></h1>
+
+    <div class="pricing">
+      <div class="plan">
+        <h2>1 DAY</h2>
+        <div class="price">$10/-</div>
+        <ul class="features">
+          <li><i class="fas fa-check-circle"></i>Pet Room</li>
+          <li><i class="fas fa-check-circle"></i>Pet Grooming</li>
+          <li><i class="fas fa-check-circle"></i>Pet Meals</li>
+          <li><i class="fas fa-check-circle"></i>Pet Exercise</li>
+          <li><i class="fas fa-check-circle"></i>Pet Games</li>
+        </ul>
+        <button class="button-33" onclick="openForm()">Buy Now</button>
+      </div>
+      <div class="plan popular">
+        <span>Most Popular</span>
+        <h2>10 DAYS</h2>
+        <div class="price">$50/-</div>
+        <ul class="features">
+            <li><i class="fas fa-check-circle"></i>Pet Room</li>
+            <li><i class="fas fa-check-circle"></i>Pet Grooming</li>
+            <li><i class="fas fa-check-circle"></i>Pet Meals</li>
+            <li><i class="fas fa-check-circle"></i>Pet Exercise</li>
+            <li><i class="fas fa-check-circle"></i>Pet Games</li>
+          </ul>
+        <button class="button-33" onclick="openForm()">Buy Now</button>
+      </div>
+      <div class="plan">
+        <h2>20 DAYS</h2>
+        <div class="price">$80/-</div>
+        <ul class="features">
+            <li><i class="fas fa-check-circle"></i>Pet Room</li>
+            <li><i class="fas fa-check-circle"></i>Pet Grooming</li>
+            <li><i class="fas fa-check-circle"></i>Pet Meals</li>
+            <li><i class="fas fa-check-circle"></i>Pet Exercise</li>
+            <li><i class="fas fa-check-circle"></i>Pet Games</li>
+          </ul>
+        <button class="button-33" onclick="openForm()">Buy Now</button>
+      </div>
+    </div>
+        </section>
+    <section>
+      <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+          <h1 style="color: aliceblue; font-family:Acme, sans-serif;">Buy a Plan</h1>
+      
+          <label for="email">Email</label>
+          <input type="text" placeholder="Full Name" name="Name" required>
+      
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="352">
+          <label for="expmonth">ExpMonth</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+      
+          <button type="submit" class="button-33" onclick="Pay()">Pay</button>
+          <button type="button" class="button-33 cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </section>
+
+        <section>
+            <footer>
+                <div class="footer">
+                  <div class="row">
+                    <a href="https://www.facebook.com/profile.php?id=100088652543160&mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/melon_codes?igsh=NDlxejNta21sYXRm&utm_source=qr"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/fgswania"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/wania-irfan-050209275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                
+                <div class="row">
+                <ul>
+                <li><a href="contact.html" target="_blank">Contact us</a></li>
+                <li><a href="services.html"  target="_blank">Our Services</a></li>
+                <li><a href="petcare.html"  target="_blank">PetCare</a></li>
+                <li><a href="contact.html"  target="_blank" >Contact</a></li>
+                </ul>
+                </div>
+                
+                <div class="row">
+                PawsomeCare Copyright © 2024 - All rights reserved || Designed By: Wania 
+                </div>
+                </div>
+                </footer>
+                
+        </section>
+</body>
+</html>
